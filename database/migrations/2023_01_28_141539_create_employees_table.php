@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('employee_id')->unique();
             $table->string('full_name');
+            $table->string('job_title');
             $table->enum('gender', ['male', 'female', 'other'])->nullable();
             $table->integer('age');
             $table->date('hire_date');

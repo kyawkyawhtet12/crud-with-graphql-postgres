@@ -25,6 +25,7 @@ type Employee {
     full_name: String
     gender: GenderEnum
     age: Int!
+    job_title: String
     hire_date: Date!
     annual_salary: Int!
     bonus: Int!
@@ -40,6 +41,7 @@ input EmployeeInput {
     employee_id: String!
     full_name: String!
     gender: GenderEnum
+    job_title: String
     age: Int!
     hire_date: Date!
     annual_salary: Int!
@@ -51,6 +53,7 @@ input EmployeeUpdateInput {
     employee_id: String!
     full_name: String!
     gender: GenderEnum
+    job_title: String
     age: Int!
     hire_date: Date!
     annual_salary: Int!

@@ -20,6 +20,7 @@ class EmployeeFactory extends Factory
         return [
             'employee_id' => $prefix. "-".fake()->unique()->numberBetween(1, 99),
             'full_name' => fake()->name,
+            'job_title' => fake()->jobTitle(),
             'gender' => fake()->randomElement(['male', 'female', 'other']),
             'age' => fake()->numberBetween(18, 60),
             'hire_date' => fake()->date(),
